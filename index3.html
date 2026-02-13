@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi segunda pagina Responsive</title>
+</head>
+<style>
+    body{
+        margin: 0%;
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+    }
+    
+    header, nav, main, footer{
+        padding: 15px;
+    }
+    header{
+        background: #2b6cb0;
+        color: white;
+    }
+nav{
+    background: #e2e8f0;
+
+}
+footer{
+    background: #e2e8f0;
+}
+footer{
+    background: #2b6cb0;
+    color: white;
+    text-align: center;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+.caja{
+    background: #f7fafc;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+@media(max-width: 700px){
+
+.grid{
+    grid-template-columns: 1fr;
+
+}
+}
+nav a{
+    margin-right: 10px;
+    text-decoration: none;
+    color:#1a202c;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Mi wed Responsive-Laura Miranda</h1>
+        <P>Ejemplo simple usando grid.</P>
+ </header>
+ <nav>
+ <a href="#">Inicio</a>
+ <a href="#">Blog</a>
+ <a href="#">Acera</a>
+ </nav>
+ 
+ <main>
+   <div class="grid">
+    <article class="caja">
+      <h2>Artículo 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsum animi, nesciunt molestias sequi accusamus illo error dolores exercitationem tenetur deserunt? Commodi recusandae dignissimos iure officia, suscipit debitis perspiciatis est.</p>
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum fugiat modi similique excepturi voluptates iste ipsum nam totam, adipisci voluptatem ipsa doloribus ex est sequi qui enim quos, amet cum.</p>
+    </article>
+
+    <article class="caja">
+     <h2>Artículo 2</h2>
+     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit quo suscipit officiis nulla! Expedita voluptas quam obcaecati pariatur necessitatibus aliquam ipsam nostrum a explicabo. Minima, similique expedita. Laboriosam, omnis placeat?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illum aliquam saepe voluptates voluptate. A assumenda officiis necessitatibus accusantium facilis eveniet. Consectetur ex quo perspiciatis ipsam officiis beatae dolorem ipsa.</p>
+    </article>
+
+   </div>
+</main>
+  
+<footer>
+    <p>Footer - ejemplo con Grid</p>
+</footer>
+    
+</body>
+</html>
